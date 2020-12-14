@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.grid {
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    height: 350px;
+    width: 450px;
+}
+img {
+    border: solid 4px orangered;
+    border-radius: 5px;
+    margin: 2px;
+}
+img:hover {
+    transition: 0.5s ease-in-out;
+    transform: scale(1.04);  
+}
+button {
+    margin: auto;
+    border: 2px solid orangered;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+button:hover {
+    transition: 0.5s ease-in-out;
+    transform: scale(1.04); 
+    background-color: palevioletred; 
+    border-color: black;
+    color: blanchedalmond;
+    font-size: larger;
+    font-weight: 500;
+}
