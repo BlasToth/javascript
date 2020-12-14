@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown App</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <h1 id="event-title">Countdown</h1>
+    <h2 id="is-coming">Give me an event and a date to start counting down</h2>
+
+    <form id="form">
+        <label for="user-event">Event's name: </label>
+        <input id="user-event" type="text" maxlength="25">
+        <label for="user-date" id="label-date">Event's date: </label>
+        <input name="user-date" id="user-date" type="date" min="">
+        <button type="submit">Delete event</button>
+    </form>
+
+    <div class="countdown-counter">
+        <div class="countdown-el days-c">
+            <p class="big-text" id="days">0</p>
+            <span>days</span>
+        </div>
+        <div class="countdown-el hours-c">
+            <p class="big-text" id="hours">0</p>
+            <span>hours</span>
+        </div>
+        <div class="countdown-el minutes-c">
+            <p class="big-text" id="minutes">0</p>
+            <span>minutes</span>
+        </div>
+        <div class="countdown-el seconds-c">
+            <p class="big-text" id="seconds">0</p>
+            <span>seconds</span>
+        </div>  
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.1.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.1.2/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+</body>
+</html>
