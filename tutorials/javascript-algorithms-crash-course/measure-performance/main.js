@@ -6,6 +6,10 @@ for (let i = 1; i <= n; i++) {
 return result;
 }
 
+function fasterSumUp(n) {
+    return (n / 2) * (1 + n);
+}
+
 let start = 0;
 let end = 0;
 
@@ -86,3 +90,14 @@ end = performance.now();
 end - start
 1503.6099999997532
 */
+
+// start = performance.now();
+// fasterSumUp(1000000000);
+// end = performance.now();
+// end - start;
+// 0.01000000350177288
+// start = performance.now();
+// fasterSumUp(10000000000);
+// end = performance.now();
+// end - start;
+// 0.010000003036111593
