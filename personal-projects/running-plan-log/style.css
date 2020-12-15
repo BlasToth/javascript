@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap');
+
+body {
+  font-family: 'Baloo 2', cursive;
+  display: flex;
+}
+
+
+.parent {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 50px, repeat(6, 1fr);
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+  }
+
+a {
+  width: 40px;
+  height: 40px;  
+  border: solid 2px salmon;
+}
+
+a:hover {
+  border: solid 2px red;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+}
+
+
+
+.fejlec {
+  display: flex;
+  background-color: midnightblue;
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+
+div.row.paros {
+  display:flex;
+  background-color: #eee8aa;
+  font-size: 1em;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+div.row.paratlan {
+  display: flex;
+  background-color: #B8B382;
+  font-size: 1em;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  
+}
+
+.col_num {
+
+  background-color: orange;
+  font-size: 2em;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    
+}
+
+button {
+  background-color: red;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.fejlec.col_num {
+  background-color: teal;
+}
