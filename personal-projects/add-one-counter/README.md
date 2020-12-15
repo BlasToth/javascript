@@ -1,6 +1,6 @@
 # Add ONE Counter
 
-## I created this simple app to be able to keep track of my workouts but a friend is using it to count cells in the laboratory as well
+## I created this simple app to be able to keep track of my workouts but a friend uses it to count cells in the laboratory
 
 ### Functions: 
 - add one pressing the + sign
@@ -10,4 +10,4 @@
 - deploy the app using Firebase hosting
 - style (gradients, transitions, animations)
 
-[Try the app here](file:///C:/Users/Hint/Desktop/Programoz%C3%A1ska/TRYJS/nekem/workout-counter/glowing/glowing2/index.html)
+[Try the app here](https://addonecounter-d233a.web.app/)
