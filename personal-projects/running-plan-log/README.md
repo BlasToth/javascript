@@ -11,3 +11,5 @@
 - use local storage
 - toggle values
 - style with javascript
+
+[Link to the app](http://angolingo.hu/ch/correr.html)
