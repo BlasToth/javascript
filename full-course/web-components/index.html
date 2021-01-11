@@ -8,12 +8,12 @@
 </head>
 <body>
     <template id="tooltip-template">
-        <span>(?)</span>
+        <slot>Default</slot><span>(?)</span>
     </template>
 
     <p>
         <bt-tooltip text="This is the text for hover">Web Components</bt-tooltip> are cool
     </p>
-    <bt-tooltip>I can reuse it wherever I want</bt-tooltip>
+    <bt-tooltip></bt-tooltip>
 </body>
 </html>
