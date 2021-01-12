@@ -11,7 +11,9 @@ class Tooltip extends HTMLElement {
                 color: yellow;
                 position: absolute;
                 z-index: 1;
-
+            }
+            ::slotted(.highlight) {
+              border-bottom: 1px dotted red;
             }
         </style>
         <slot>Default</slot>

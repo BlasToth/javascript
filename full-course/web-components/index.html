@@ -6,11 +6,17 @@
     <title>Web Components</title>
     <script src="./tooltip.js"></script>
     <script src="./confirm-link.js"></script>
+    <style>
+        .highlight {
+            background-color: rgb(248, 194, 94);
+        }
+
+    </style>
     
 </head>
 <body>
     <p>
-        <bt-tooltip text="This is the text for hover">Web Components</bt-tooltip> are cool
+        <bt-tooltip text="This is the text for hover"><span class="highlight">Web Components</span></bt-tooltip> are cool
     </p>
     <bt-tooltip></bt-tooltip>
     <a is="bt-confirm-link" href="https://google.com">Google</a>
