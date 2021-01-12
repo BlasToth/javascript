@@ -12,6 +12,10 @@ class Tooltip extends HTMLElement {
                 position: absolute;
                 z-index: 1;
             }
+            :host(.important) {
+              background: #ccc;
+            }
+
             ::slotted(.highlight) {
               border-bottom: 1px dotted red;
             }
