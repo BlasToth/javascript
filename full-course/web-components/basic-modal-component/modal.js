@@ -12,6 +12,8 @@ class Modal extends HTMLElement {
                     height: 100vh;
                     background: rgba(0,0,0,0.75);
                     z-index: 1;
+                    opacity: 0;
+                    pointer-events: none;
                 }
                 #modal {
                     position: fixed;
@@ -24,6 +26,8 @@ class Modal extends HTMLElement {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
+                    opacity: 0;
+                    pointer-events: none;
                 }
                 header {
                     padding: 1rem;
