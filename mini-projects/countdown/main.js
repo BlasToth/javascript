@@ -11,8 +11,8 @@ const h2Text = document.getElementById("is-coming")
 
 // set the min value in the calendar to tomorrow
 let today = new Date();
-const dd = today.getDate() + 1; // + 1 day = from tomorrow
-const mm = today.getMonth() + 1; //January is 0!
+let dd = today.getDate() + 1; // + 1 day = from tomorrow
+let mm = today.getMonth() + 1; //January is 0!
 const yyyy = today.getFullYear();
 if (dd < 10) {
   dd = "0" + dd;
