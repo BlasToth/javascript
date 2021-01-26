@@ -14,7 +14,12 @@ class Product {
 
 class ShoppingCart {
   items = [];
-
+// The set syntax binds an object property to a function to be called when there is an attempt to set that property.
+  set cartItems(value) {
+    this.items = value;
+    this.totalOutput.innerHTML = `<h2>Total: \$${this.totalAmount.toFixed(2)}</h2>`;
+  }
+// The get syntax binds an object property to a function that will be called when that property is looked up.
   get totalAmount() {
     const sum = this.items.reduce((prevValue, curItem) => prevValue + curItem.price
      ,0
@@ -23,8 +28,9 @@ class ShoppingCart {
   }
 
   addProduct(product) {
-    this.items.push(product);
-    this.totalOutput.innerHTML = `<h2>Total: \$${this.totalAmount}</h2>`;
+    const updatedItems = [...this.items];
+    updatedItems.push(product);
+    this.cartItems = updatedItems;
   }
 
   render() {
