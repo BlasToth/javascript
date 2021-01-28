@@ -39,7 +39,10 @@ let setUpToolTip = function() {
 
     toolTipElements.forEach(function(elem) {
         elem.addEventListener("mouseenter", function(e) {
-            displayToolTip(e, this);
+            let that = this; // funny workaround
+            setTimeout(function() {
+                displayToolTip(e, that);
+            }, 400);
         });
         elem.addEventListener("mouseleave", function(e) {
             // toolTipDiv.style.opacity = 0;
