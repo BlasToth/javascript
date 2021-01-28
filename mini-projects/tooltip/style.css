@@ -12,5 +12,23 @@ h2 {
 }
 p {
     font-size: 3em;
-    margin: 30px;
+    margin: 60px;
+}
+[data-tooltip] {
+    position: relative;
+}
+
+[data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    width: 200px;
+    top: -140%;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    text-align: center;
+    color: cornsilk;
+    background-color: cadetblue;
+    border-radius: 10px;
+    border: 3px dotted whitesmoke;
 }
