@@ -14,8 +14,11 @@ let setUpToolTip = function() {
     toolTipElements.forEach(function(elem) {
         elem.addEventListener("mouseenter", function(e) {
             displayToolTip(e, this);
-        })
-    })
+        });
+        elem.addEventListener("mouseleave", function(e) {
+            toolTipDiv.style.opacity = 0;
+        });
+    });
 };
 
 setUpToolTip();
