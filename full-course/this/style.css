@@ -1,0 +1,14 @@
+code {
+    background-color: #eee;
+    border-radius: 3px;
+    font-family: courier, monospace;
+    padding: 0 3px;
+    display: block;
+    width: 50%;
+    max-width: 500px; 
+}
+
+
+.card__rules {
+    background-color: burlywood;
+}

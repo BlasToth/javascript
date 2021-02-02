@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The JavaScript this Keyword</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js"></script>
+</head>
+<body>
+    <h1 class="main__title">The JavaScript this Keyword</h1>
+    <div class="card">
+        <h2 class="card__title">Example</h2>
+        <pre><code>
+var person = {
+    firstName: "John",
+    lastName : "Doe",
+    id       : 5566,
+    fullName : function() {
+        return this.firstName + " " + this.lastName;
+        }
+    };
+        </code></pre>
+    </div>
+    <div class="card">
+        <h2 class="card__title">What is this?</h2>
+        <p class="card__explanation">The JavaScript this keyword refers to the object it belongs to.</p>
+        <p class="card__rules">
+<pre>
+    It has different values depending on where it is used:
+
+        In a method, this refers to the owner object.
+        Alone, this refers to the global object.
+        In a function, this refers to the global object.
+        In a function, in strict mode, this is undefined.
+        In an event, this refers to the element that received the event.
+        Methods like call(), and apply() can refer this to any object.
+</pre>
+        </p>
+    </div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    
+</body>
+</html>
