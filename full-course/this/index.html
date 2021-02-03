@@ -83,11 +83,24 @@ In strict mode, when used alone, this also refers to the Global object [object W
     </div>
     
     <div class="card">
-        <h2 class="card__title"></h2>
-        <p class="card__explanation"></p>
+        <h2 class="card__title">this in a Function (Default)</h2>
+        <p class="card__explanation">
+            <pre>
+In a JavaScript function, the owner of the function is the default binding for this.
+
+So, in a function, this refers to the Global object [object Window].
+            </pre>
+        </p>
+        <pre>
+            <code>
+function myFunction() {
+    return this;
+    }
+            </code>
+        </pre>
     </div>
     <div class="card">
-        <h2 class="card__title"></h2>
+        <h2 class="card__title">this in a Function (Strict)</h2>
         <p class="card__explanation"></p>
     </div>
     <div class="card"></div>
