@@ -5,5 +5,9 @@ get_joke.addEventListener('click', generateJoke);
 
 async function generateJoke() {
     // call the API
-    const jokeRes = await fetch('https://icanhazdadjoke.com/');
+    const jokeRes = await fetch('https://icanhazdadjoke.com/', {
+        headers: {
+            'Accept': 'application/json'
+        }
+    });
 }
