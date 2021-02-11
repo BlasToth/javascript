@@ -2,3 +2,4 @@
 
 - async function
 - await keyword
+- json();
