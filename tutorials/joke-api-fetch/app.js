@@ -1,7 +1,10 @@
 const jokeEl = document.getElementById('joke');
 const get_joke = document.getElementById('get_joke');
+console.log(jokeEl)
 
 get_joke.addEventListener('click', generateJoke);
+
+generateJoke();
 
 async function generateJoke() {
     // call the API
@@ -10,4 +13,9 @@ async function generateJoke() {
             'Accept': 'application/json'
         }
     });
+
+    // set the new joke
+    const joke = await jokeRes.json();
+
+    console.log(joke);
 }
