@@ -1,6 +1,5 @@
 const jokeEl = document.getElementById('joke');
 const get_joke = document.getElementById('get_joke');
-console.log(jokeEl)
 
 get_joke.addEventListener('click', generateJoke);
 
@@ -17,5 +16,5 @@ async function generateJoke() {
     // set the new joke
     const joke = await jokeRes.json();
 
-    console.log(joke);
+    jokeEl.innerHTML = joke.joke;
 }
