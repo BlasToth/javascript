@@ -1,3 +1,5 @@
+// Array destructuring
+
 const alphabet = ['A', 'B', 'C', 'D', 'E', 'F'];
 const numbers = ['1', '2', '3', '4', '5', '6'];
 
@@ -15,9 +17,40 @@ console.log(newArray);
 // console.log(rest);
 
 function sumAndMultiply(a,b) {
-    return [a + b, a * b ];
+    return [a + b, a * b, a / b ];
 }
 
-const array = sumAndMultiply(2, 3);
+// const array = sumAndMultiply(2, 3);
 
-console.log(array);
+// console.log(array);
+
+const [sum, multiply, division = "No division"] = sumAndMultiply(2, 3);
+
+console.log(sum);
+console.log(multiply);
+console.log(division);
+
+// Object destructuring
+
+const personOne = {
+    name: 'John',
+    age: 23,
+    address: {
+        city: 'Nowhere',
+        state: 'United'
+    }
+}
+
+const personTwo = {
+    name: 'Sally',
+    age: 32,
+    address: {
+        city: 'Nowhere else',
+        state: 'United again'
+    }
+}
+
+const { name: firstName, age, favouriteFood = "Oats" } = personTwo;
+console.log(firstName);
+console.log(age);
+console.log(favouriteFood);
