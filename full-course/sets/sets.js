@@ -34,3 +34,23 @@ for (let item of mySet) {
 const myArray = Array.from(mySet);
 
 console.log("This is an Array from a Set: " + myArray);
+
+// When to use Sets?
+// Filter repetition
+const missedCalls = ["Rodrigo", "Miguel", "Elena", "Blas", "Rodrigo", "Rodrigo", "Miguel", "Elena", "Blas", "Blas"];
+
+console.log(new Set(missedCalls));
+console.log([...new Set(missedCalls)]);
+
+// Dice game
+
+function isItFullHouse(dice) {
+    return dice.length === 5 && new Set(dice).size === 2;
+}
+
+function isItFiveOfAKind(dice) {
+    return dice.length === 5 && new Set(dice).size === 1;
+}
+
+console.log(isItFiveOfAKind([2,2,2,2,2]));
+console.log(isItFullHouse([2,3,2,3,3]));
