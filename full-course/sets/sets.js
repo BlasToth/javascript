@@ -52,5 +52,11 @@ function isItFiveOfAKind(dice) {
     return dice.length === 5 && new Set(dice).size === 1;
 }
 
+function isLargestStraight(dice) {
+    const d = new Set(dice);
+    return dice.length === 5 && d.size === 5 && (!d.has(1) || !d.has(6));
+}
+
 console.log(isItFiveOfAKind([2,2,2,2,2]));
 console.log(isItFullHouse([2,3,2,3,3]));
+console.log(isLargestStraight([6,4,2,1,3]));
